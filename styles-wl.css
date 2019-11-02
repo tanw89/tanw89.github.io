@@ -231,7 +231,7 @@ nav a:hover, nav a:focus{
 	}
 }
 
-@media (max-height: 700px) {
+@media (max-height: 670px) {
 	.home-hero {
 		height: 120vh;
 		padding-top: 12em;
@@ -326,14 +326,10 @@ nav a:hover, nav a:focus{
 	}
 
 .portfolio h1 {
-	margin: 0em;
+	margin: 0em 0em;
 	padding-top:1.6em;
 	padding-bottom: 0.4em;
 	color: #FFF;
-}
-
-.portfolio p {
-	margin: 0em;
 }
 
 
@@ -344,8 +340,6 @@ nav a:hover, nav a:focus{
 	background-color: #232323;
 	position: relative;
 	padding-bottom: 0em;
-	margin-top: 3.5em;
-	border-color: #232323;
 }
 
 .port-item img {
@@ -356,7 +350,7 @@ nav a:hover, nav a:focus{
 .port-desc {
 	position: absolute;
 	z-index: 0;
-	bottom: 0em;s
+	bottom: 0em;
 	left: 0em;
 	right: 0em;
 	color: white;
@@ -372,7 +366,6 @@ nav a:hover, nav a:focus{
 	.port-item {
 		width: 50%;
 		float: left;
-
 	}
 }
 
