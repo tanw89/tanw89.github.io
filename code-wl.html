@@ -64,75 +64,70 @@
 
 <!--Pop-ups-->
 <section class="portfolio">
-        <div id="popup1" class="overlay">
+    <div id="popup1" class="overlay">
         <div class="popup">
             <h2>The Investing <br>Squirrel</h2>
             <a class="close" href="#item2">&times;</a>
             <div class="content">
             The Investing Squirrel is a financial information chatbot served through a DialogFlow frontend, powered by a webhook in NodeJS. Originally, I built it to provide financial definitions for beginners. 
-                
-<br><br>However, I realised that incorporating API functionality would make it more powerful. I could perform quick checks on share prices, or pack in interactive content to function as behavioural nudges. 
-<br><br>
-<img src="img/code/squirrel/options.png"> 
-<br><br>The chatbot functions as follows: based on the user’s inputs, DialogFlow will detect the appropriate intent. If an intent requesting for share price is detected, the backend webhook will make a POST request to the AlphaVantage API which provides financial information. 
-<br><br>
-<img src="img/code/squirrel/shareprice.png">
-<br><br>
-Over time, I was able to introduce a backend logic to include 2 more functions: 1) a news function, that would serve the latest information on a particular company or stock:
-<br><br>
-<img src="img/code/squirrel/news.png"> 
-<br><br>
-And 2) a technical indicator function, serving 3 simple indicators for my needs (MACD, RSI and stochastics).
-<br><br>
-<img src="img/code/squirrel/technicals.png"> 
-<br><br>
-The Investing Squirrel is integrated with Facebook for beta testers, and I have not published it as my API calls per day are limited each day. Do ping me if you want to try it out, and I will grant access if you have a Facebook Developer account. I am looking to publish it on Telegram soon.
-<br><br>
+            <br><br>I later realised that incorporating API functionality would make it more powerful. I could perform quick checks on share prices, or pack in interactive content to function as behavioural nudges. 
+            <br><br>
+            <img src="img/code/squirrel/options.png"> 
+            <br><br>The chatbot functions as follows: based on the user’s inputs, DialogFlow will detect the appropriate intent. If an intent requesting for share price is detected, the backend webhook will make a POST request to the AlphaVantage API which provides financial information. 
+            <br><br>
+            <img src="img/code/squirrel/shareprice.png">
+            <br><br>
+            Over time, I was able to improve the backend logic to include 2 more functions: 1) a news function:
+            <br><br>
+            <img src="img/code/squirrel/news.png"> 
+            <br><br>
+            And 2) a technical indicator function, serving 3 simple indicators for my needs (MACD, RSI and stochastics).
+            <br><br>
+            <img src="img/code/squirrel/technicals.png"> 
+            <br><br>
+            The Investing Squirrel is integrated with Facebook for beta testers. A raw version of it is available on Telegram (but due to limited API calls and choppy dynos from free Heroku hosting, you may experience some lag). Give it a shot and have fun!
+            <br><br>
+            <br><br>
+                <div class="content-try">
+                <a href="https://t.me/investingsquirrelbot" target="_blank" class = "button button-port">Try it here</a>
+                </div>
+            <br><br>
             </div>
         </div>
     </div>
+
     <div id="popup2" class="overlay">
         <div class="popup">
-            <h2>Richard, HDB Valuation Chatbot</h2>
+            <h2>Richard, HDB <br> Valuation Chatbot</h2>
             <a class="close" href="#item3">&times;</a>
             <div class="content">
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
-                Hello how are you doing . <br><br>
+            The idea for “Richard” came about because many of my engaged or married friends were sourcing for a BTO flat around the time it was created. They wanted a quick, back-of-envelop way to verify that the valuations they were quoted were reasonable.
+            <br><br>Since HDB also publishes its data openly (clean data!), and I had experience in model fitting and evaluation, I thought: why not train a model based on this data and try to predict, by regression, test cases with inputs provided by the user? The planned architecture was as follows:
+            <br><br> 
+            <img src="img/code/richard/architecture.png">             
+            <br><br>Having planned the layout, the first step was to procure the data, then to train it, and finally evaluate the models. Out of 4 models I’ve tried, the XGBoost regressor provided the best accuracy. I stored the weights in a pickle file:
+            <br><br>
+            <img src="img/code/richard/weights.png"> 
+	        <br><br>
+	        The weights were connected by means of a Flask app, which served as the backbone of the endpoint managing POST and GET RESTful API requests (essentially, connecting the mathematical calculations to the user’s input through DialogFlow).
+	        <br><br>
+            <img src="img/code/richard/flaskapp.png">             <br><br>
+            The chatbot agent was then trained to identify the parameters such as story, lease remainng, town, floor area and flat type. Stylistic elements to give it a local feel were included.
+            <br><br>
+            <img src="img/code/richard/finaline.png"> 
+            <img src="img/code/richard/mockup.png">
+            <br><br>
+            Richard is available as a DialogFlow agent. Based from feedback from the initial test run (n=15 users), about 8 have said that the valuations were accurate. My future plans include converting the frontend into a web form, and allowing users to feedback on whether the valuation was accurate, so that the model can reinforce its accuracy over time.
+            <br><br>
+            <br><br>
+                <div class="content-try">
+                <a href="http://bot.dialogflow.com/hdbvaluationapp " target="_blank" class = "button button-port">Try it here</a>
+                </div>
+            <br><br>
             </div>
         </div>
     </div>
+
 
     <div id="popup3" class="overlay">
         <div class="popup">
