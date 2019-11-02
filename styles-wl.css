@@ -231,24 +231,36 @@ nav a:hover, nav a:focus{
 	}
 }
 
+@media (max-height: 670px) {
+	.home-hero {
+		height: 120vh;
+		padding-top: 12em;
+		padding-bottom: 0em;
+	}
+}
+
 
 /*home-about segment*/
 
 
 .home-about-textbox {
 	background-color: #232323;
-	padding: 5em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+	padding-top: 4.5em;
+	padding-bottom: 4.5em;
 	width: 100vw;
 	outline: 2px solid #00ccff;
 	outline-offset: -2.5em; 
 	color: #FFF;
 	position: relative;
+	text-align: left;
 }
 
 .home-about-textbox h1 {
 	color: #00ccff;
 	position: absolute;
-	top: -0.1em;
+	top: 0.1em;
 	background: #232323;
 	left: 50%;
 	transform: translateX(-50%);
@@ -262,7 +274,7 @@ nav a:hover, nav a:focus{
 	}
 
 	.home-about-textbox {
-		padding: 5.5em;
+		padding: 4.5em;
 		text-align: left;
 	}
 
@@ -314,10 +326,14 @@ nav a:hover, nav a:focus{
 	}
 
 .portfolio h1 {
-	margin: 0em 0em;
+	margin: 0em;
 	padding-top:1.6em;
 	padding-bottom: 0.4em;
 	color: #FFF;
+}
+
+.portfolio p {
+	margin: 0em;
 }
 
 
@@ -328,6 +344,8 @@ nav a:hover, nav a:focus{
 	background-color: #232323;
 	position: relative;
 	padding-bottom: 0em;
+	margin-top: 3.5em;
+	border-color: #232323;
 }
 
 .port-item img {
@@ -354,6 +372,7 @@ nav a:hover, nav a:focus{
 	.port-item {
 		width: 50%;
 		float: left;
+
 	}
 }
 
@@ -373,6 +392,14 @@ nav a:hover, nav a:focus{
 	}
 }
 
+@media (max-height: 670px) {
+	.port-item {
+		margin-top: 3.5em;
+		border-color: #232323;
+	}
+}
+
+
 /* Footer
 =================== */
 
@@ -380,7 +407,7 @@ footer {
 	background: #232323;
 	color: #fff;
 	text-align: left;
-	padding: 7em 0;
+	padding: 9em 0;
 }
 
 .fa {
