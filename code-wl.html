@@ -59,6 +59,15 @@
             <a href="#popup3" class = "button button-port button-small">View here</a>
         </figcaption>
     </figure>
+
+        <!--portfolio item 4-->
+        <figure class="port-item" id="item4">
+            <img src="" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p></b></p>
+                <a href="#popup4" class = "button button-port button-small">View here</a>
+            </figcaption>
+        </figure>
             
 </section>
 
@@ -101,22 +110,22 @@
             <h2>Richard, HDB <br> Valuation Chatbot</h2>
             <a class="close" href="#item3">&times;</a>
             <div class="content">
-            The idea for “Richard” came about because many of my engaged or married friends were sourcing for a BTO flat around the time it was created. They wanted a quick, back-of-envelop way to verify that the valuations they were quoted were reasonable.
-            <br><br>Since HDB also publishes its data openly (clean data!), and I had experience in model fitting and evaluation, I thought: why not train a model based on this data and try to predict, by regression, test cases with inputs provided by the user? The planned architecture was as follows:
+            The idea for “Richard” came about because many of my engaged or married friends were sourcing for a BTO flat. They wanted a quick, back-of-envelop way to verify that the valuations they were quoted were reasonable.
+            <br><br>Since HDB also publishes its data openly (clean data!), and I had experience in model fitting and evaluation, I thought: why not train a model based on this data and try to predict prices based on user's inputs of their flat's info? I then conceptualised the app's structure:
             <br><br> 
             <img src="img/code/richard/architecture.png">             
-            <br><br>Having planned the layout, the first step was to procure the data, then to train it, and finally evaluate the models. Out of 4 models I’ve tried, the XGBoost regressor provided the best accuracy. I stored the weights in a pickle file:
+            <br><br>Based on this structure, the first step was to procure the data, then to train it, and finally evaluate the models. Out of 4 models I’ve tried, the XGBoost regressor provided the best accuracy. I stored the XGBoost weights in a pickle file:
             <br><br>
             <img src="img/code/richard/weights.png"> 
 	        <br><br>
-	        The weights were connected by means of a Flask app, which served as the backbone of the endpoint managing POST and GET RESTful API requests (essentially, connecting the mathematical calculations to the user’s input through DialogFlow).
+	        The weights were connected by means of a Flask app to the user. The Flask script manages RESTful API requests and user's inputs, essentially allowing what the user keys in to feed into the mathematical calculations.
 	        <br><br>
             <img src="img/code/richard/flaskapp.png">             <br><br>
-            The chatbot agent was then trained to identify the parameters such as story, lease remainng, town, floor area and flat type. Stylistic elements to give it a local feel were included.
+            Lastly, for a smoother front end experience, the chatbot agent was then trained to identify different ways a user would key in the parameters such as storey, lease remaining, town, floor area and flat type. Stylistic elements to give it a local feel were also included.
             <br><br>
             <img src="img/code/richard/finaline.png">
             <br><br>
-            Richard is available as a DialogFlow agent. Based from feedback from the initial test run (n=15 users), about 8 have said that the valuations were accurate. My future plans include converting the frontend into a web form, and allowing users to feedback on whether the valuation was accurate, so that the model can reinforce its accuracy over time.
+            Richard is available as a DialogFlow agent. Based on feedback from the initial test run (n=15 users), about 8 have said that the valuations were accurate. My future plans include converting the frontend into a web form, and allowing users to give feedback on whether the valuation was accurate, so that the model can reinforce its accuracy over time.
             <br><br>
             <br><br>
                 <div class="content-try">
@@ -137,6 +146,19 @@
             </div>
         </div>
     </div>
+
+    <div id="popup4" class="overlay">
+        <div class="popup">
+            <h2>To be added</h2>
+            <a class="close" href="#item3">&times;</a>
+            <div class="content">
+                Hello how are you doing .
+            </div>
+        </div>
+    </div>
+
+
+
 </section>
 
 <section class="other-segments">
