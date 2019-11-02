@@ -231,7 +231,7 @@ nav a:hover, nav a:focus{
 	}
 }
 
-@media (max-height: 670px) {
+@media (max-height: 700px) {
 	.home-hero {
 		height: 120vh;
 		padding-top: 12em;
@@ -356,7 +356,7 @@ nav a:hover, nav a:focus{
 .port-desc {
 	position: absolute;
 	z-index: 0;
-	bottom: 0em;
+	bottom: 0em;s
 	left: 0em;
 	right: 0em;
 	color: white;
