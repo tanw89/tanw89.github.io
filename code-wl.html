@@ -145,16 +145,16 @@
            This IPYNB notebook was written as part of my final assignment for a machine learning module under the Specialist Diploma in Data Science (Artificial Intelligence) which I read in 2018. The task was to fit a neural network to the MNIST handwritten digit dataset, and train the computer to identify human-written digits correctly.
             <br><br>I decided to take the assignment up a notch by doing several things: a) instead of fitting 1, I would fit 3 neural networks, b) instead of instantiating ready-made versions, I would build them ground-up from scratch, and c) instead of using the dataset as-is, I would try to augment and increase the size of my train set.
             <br><br> The first dataset I tried to build from scratch was the LeNet5 architecture. I accessed the original paper written by Yann LeCunn et al in 1998. The network certainly less complex than many of the complicated architectures written today, given the (lack of) compute power back then. I reproduced it and got about 5% error rate in the task. <br><br>
-            <img src="img/code/3nn/lenet5.png">             
+            <img src="img/code/3NN/lenet5.png">             
             <br><br>
-            <img src="img/code/3nn/weights.png"> 
+            <img src="img/code/3NN/weights.png"> 
             I also tried two other architectures. The first, ZFNet, turned out to be more massive than needed, as they were meant to recognise colour images. They had to be scaled down because the MNIST was a 1-channel grayscale dataset. I accessed the original papers to get a sense of their structure, and applied proportion to scale down some of the convolution and pooling layers.
 	        <br><br>
-            <img src="img/code/3nn/zfnet.png"> 
+            <img src="img/code/3NN/zfnet.png"> 
             <br><br>
             Lastly, I also gained knowledge of how to artificially increase the train set size by rotating the MNIST digits to form new images, and played around with the learning rate to get the best results. This allowed me to drop my error rate from nearly 5% earlier, to 0.97%. The link to the notebook is provided below.
             <br><br>
-            <img src="img/code/3nn/augmentation.png"> 
+            <img src="img/code/3NN/augmentation.png"> 
             <br><br>
                 <div class="content-try">
                 <a href="https://www.slideshare.net/slideshow/embed_code/key/BmD2Ayi9QJmncZ" target="_blank" class = "button button-port">See the code here</a>
@@ -176,7 +176,9 @@
                 <br><br>
                 <img src="img/code/cluster/silhoutte.png">
                 <br><br>
-                For this task, Spectral Clustering with a k-valule of 3 proved to be the most effective. However, the magic lay not in the results, but the process. By using different metrics, I developed a unique workflow to triangulate and get a sense of where the optimal k value was roughly situated. I then “subbed” back this k value into the different selected algorithms to see which one could cluster the most effectively. this workflow has entered my toolkit, and I will use it in future for unsupervised learning tasks. 
+                For this task, Spectral Clustering with a k-valule of 3 proved to be the most effective. However, the magic lay not in the results, but the process. 
+                <br><br>
+                By using various metrics, I developed a unique workflow to triangulate and get a sense of where the optimal k value was roughly situated. I then “subbed” back this k value into the selected algorithms to see which one could cluster the most effectively. This workflow has entered my toolkit and I will use it in future for unsupervised learning tasks. 
                 <br><br> 
                 <br>
                 <img src="img/code/cluster/ari.png">
