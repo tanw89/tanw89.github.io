@@ -46,8 +46,8 @@ footer::after {
 }
 
 .col-3 {
-	margin-left: 1em;
-	padding-left: 1.2em;
+	margin-left: -0.1em;
+	padding-left: 2em;
 	padding-right:1.2em;
 }
 
@@ -55,6 +55,7 @@ footer::after {
 	width: 33.333334%;
 	float: left;
 	padding-left: 2em;
+	margin-left: -0.4em;
 }
 
 
@@ -78,7 +79,8 @@ footer::after {
 
 	.col-3 {
 		width: 50%;
-		font-size: 2rem;
+		padding-top: 1.7em;
+		font-size: 1.5rem;
 	}
 
 	.col-1 {
@@ -88,7 +90,6 @@ footer::after {
 		padding-left: 0.6em;
 	}
 }
-
 
 /* typography */
 .title{
@@ -175,7 +176,7 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
 /*nav*/
@@ -218,7 +219,8 @@ nav a:hover, nav a:focus{
 	background-image: url(img/fisherman2.jpg);
 	background-size: cover;
 	background-position: center;
-	padding: 10em 0em;
+	padding: 17em 0em;
+	height: 100vh;
 	color: #FFF;
 }
 
