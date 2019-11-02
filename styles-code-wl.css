@@ -222,7 +222,7 @@ nav a:hover, nav a:focus {
 /* home hero */
 
 .home-hero-code {
-	background-image: url(img/codebanner2.jpg);
+	background-image: url(img/codebanner3.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -238,7 +238,7 @@ nav a:hover, nav a:focus {
 }
 
 @media (max-height: 670px) {
-	.home-hero {
+	.home-hero-code {
 		height: 120vh;
 		padding-top: 12em;
 		padding-bottom: 0em;
