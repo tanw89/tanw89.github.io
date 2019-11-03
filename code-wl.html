@@ -25,14 +25,15 @@
     <div class="container">
         <h1 class="title">Personal portfolio.</h1>
         <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
-        <a href="#item1" class="button button-accent">See my work</a> 
+        <a href="#item1" class="button button-accent">See my code</a> 
     </div>
 </section>
     
 <section class="portfolio" id="portfolio">
     <h1>&lt;Hello World&gt;</h1>
-    <p class="title-small">While I first picked up programming in 2003, it was not until 2017 that my affinity was rekindled through a Data Science course at General Assembly.
-    <br><br>My goal is to be more of a tech producer than a consumer. I am still learning various development tools in the full stack, and trying to build things from the bottom up (like this site, which was built purely on vanilla HTML and CSS :P)</p>
+    <p class="title-small"> I first picked up programming in 2003. However it was not until 2017    that my affinity was rekindled through a Data Science course at General Assembly. By joining data science competitions in Kaggle with my newly acquired skills, I learnt that these lines of machine-speak had great potential for real world impact. 
+    <br><br> One of my biggest "eureka" moments was when my code put me in the top 20% performance of a Costa Rican social service means testing data contest -- hardly bleeding edge performance, but very personally empowering to know that I had the tools to make a difference. 
+    <br><br> My next steps are to learn how to productionise models and create digital products. Currently, I am picking up full stack development skills, and trying to build things from ground up. This site, for instance, is purely front-end material on vanilla HTML and CSS, even though life would be a lot easier in Wordpress or Wix :P</p>
         <!--portfolio item 1-->
     <figure class="port-item" id="item1">
         <img src="img/code/squirrel/squirrel2.png" alt="portfolio item">
@@ -142,17 +143,17 @@
             <h2>Exploring 3 popular neural networks in Keras</h2>
             <a class="close" href="#item4">&times;</a>
             <div class="content">
-           This IPYNB notebook was written as part of my final assignment for a machine learning module under the Specialist Diploma in Data Science (Artificial Intelligence) which I read in 2018. The task was to fit a neural network to the MNIST handwritten digit dataset, and train the computer to identify human-written digits correctly.
-            <br><br>I decided to take the assignment up a notch by doing several things: a) instead of fitting 1, I would fit 3 neural networks, b) instead of instantiating ready-made versions, I would build them ground-up from scratch, and c) instead of using the dataset as-is, I would try to augment and increase the size of my train set.
-            <br><br> The first dataset I tried to build from scratch was the LeNet5 architecture. I accessed the original paper written by Yann LeCunn et al in 1998. The network certainly less complex than many of the complicated architectures written today, given the (lack of) compute power back then. I reproduced it and got about 5% error rate in the task.
+           This IPYNB notebook was written for my final Applied Machine Learning assignment of the Specialist Diploma in Data Science (Artificial Intelligence). I took up this course at Singapore Polytechnic in 2018 as I wanted to sharpen the skills I have earlier gained from General Assembly. 
+            <br><br>The task was a classic one: fit a neural network to the MNIST dataset and train the computer to identify human-written digits correctly. However, to challenge myself, I did some things differently:  a) I trieed 3 neural networks instead of just 1, b) I built all 3 networks from scratch by reading through their papers and gaining a thorough understanding, rather than just importing ready-made versions, and c) I augmented the size of my train set instead of using the dataset as-is.
+            <br><br> The first architecture I built was the LeNet5 architecture. I read the original paper written by Yann LeCunn et al in 1998 and realised the network was certainly less complex due to the (lack of) compute power back then. I reproduced it and got an error rate of about 4.8%.
             <br><br>
             <img src="img/code/3NN/lenet5.png">    
             <br><br>
-            I also tried two other architectures. The first, ZFNet, turned out to be more massive than needed, as they were meant to recognise colour images. They had to be scaled down because the MNIST was a 1-channel grayscale dataset. I accessed the original papers to get a sense of their structure, and applied proportion to scale down some of the convolution and pooling layers.
+            Thereafter, I tried building two other more modern architectures. The first, ZFNet, turned out to be rather massive as it was meant to recognise colour images. MNIST however was a 1-channel grayscale dataset and this meant the architecture had to be scaled down. Again, I accessed the original paper to get a sense of their structure, and applied proportion to scale down some convolution and pooling layers. I repeated this process for VGG-16.
 	        <br><br>
             <img src="img/code/3NN/zfnet.png"> 
             <br><br>
-            Lastly, I also gained knowledge of how to artificially increase the train set size by rotating the MNIST digits to form new images, and played around with the learning rate to get the best results. This allowed me to drop my error rate from nearly 5% earlier, to 0.97%. The link to the notebook is provided below.
+            Finally, I learnt how to artificially increase the train set size by rotating the MNIST digits to form new images, and played around with the learning rate to get the best results. This allowed me to drop my error rate from nearly 5% earlier, to a whopping 0.97%. The link to the notebook is provided below.
             <br><br>
             <img src="img/code/3NN/augmentation.png"> 
             <br><br>
@@ -169,20 +170,23 @@
             <h2>Exploring 3 popular neural networks in Keras</h2>
             <a class="close" href="#item5">&times;</a>
             <div class="content">
-                In this IPYNB notebook, I assessed how effective various clustering algorithms were atsuss ing out the inherent number of classes in the dataset, and labelling the data in a way that mimics reality as close as possible.
-                <br><br> The dataset which was used here is the classic iris dataset, and 4 algorithms were tested: a) K-Means Clustering, b) Spectral Clustering, c) Agglomerative Clustering, and d) DBSCAN. For the latter, the algorithm dictates the optimal number of clusters without needing the user’s input on “k”. Various evaluation metrics were to assess each of the 4 algorithms.
+                In this IPYNB notebook, I assessed the effectiveness of various clustering algorithms when applied to the classic Iris dataset. 4 algorithms were tested: a) K-Means Clustering, b) Spectral Clustering, c) Agglomerative Clustering, and d) DBSCAN. Various evaluation metrics were to assess each algorithm.
                 <br><br>
-                <img src="img/code/cluster/calinski.png">             
+                    <div class = "content-try">
+                    <img src="img/code/cluster/calinski.png" width = 60%>  
+                    </div>           
                 <br><br>
-                <img src="img/code/cluster/silhoutte.png">
+                    <div class = "content-try">
+                    <img src="img/code/cluster/silhoutte.png" width = 60%>
+                    </div> 
                 <br><br>
-                For this task, Spectral Clustering with a k-valule of 3 proved to be the most effective. However, the magic lay not in the results, but the process. 
-                <br><br>
-                By using various metrics, I developed a unique workflow to triangulate and get a sense of where the optimal k value was roughly situated. I then “subbed” back this k value into the selected algorithms to see which one could cluster the most effectively. This workflow has entered my toolkit and I will use it in future for unsupervised learning tasks. 
+                Through this unsupervised learning task, I developed a personal workflow to triangulate and get a rough sense of where the optimal k value was. This was backed up by DBSCAN, which computes its own k without requiring the user’s specification.I then “subbed” back this range of k values back into the 4 selected algorithms to see which one could performed the best.  
                 <br><br> 
                 <br>
-                <img src="img/code/cluster/ari.png">
-                The link to the notebook is provided below.
+                    <div class = "content-try">
+                    <img src="img/code/cluster/ari.png" width = 60%>
+                    </div> 
+                Using this workflow, I determined Spectral Clustering with a k-value of 3 proved to be the most effective. This workflow has now entered my toolkit as a useful reference for future unsupervised learning tasks. The link to the notebook is provided below.
                 <br><br>
                 <br><br>
                 <div class="content-try">
@@ -198,7 +202,7 @@
 <section class="other-segments">
         <h2>For now, that's all for code!</h2>
         <a href="#item1" class="button-others">See my music</a> 
-        <a href="#item1" class="button-others">See my art</a> 
+        <a href="art-wl.html" class="button-others">See my art</a> 
 </section>
 
 <footer id="footer">
