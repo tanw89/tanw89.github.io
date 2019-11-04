@@ -320,7 +320,6 @@ nav a:hover, nav a:focus {
 	margin: 1em;
 	font-size: 1.25em;
 }
-
 /*modal window*/
 
 .overlay {
@@ -374,7 +373,8 @@ nav a:hover, nav a:focus {
 }
 
 .popup .content {
-	max-height: 75%;
+	max-height: 20%;
+	margin-top: 1.5em;
 	margin-left: 1.5em;
 	margin-right: 0.3em;
 	padding-right: 1em;
@@ -404,7 +404,9 @@ nav a:hover, nav a:focus {
 	}
 	.popup {
 		width: 70%;
+		height: 85%;
 	}
+
 }
 
 @media (max-width: 60rem) {
@@ -413,7 +415,11 @@ nav a:hover, nav a:focus {
 	}
 	.popup {
 		width: 90%;
-		height: 80%;
+		height: 85%;
+	}
+
+	.popup .content {
+		max-height: 10%;
 	}
 }
 
