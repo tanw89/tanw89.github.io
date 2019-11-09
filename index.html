@@ -6,6 +6,11 @@
     <title>Weilie</title>
     <link href="styles-wl.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+          }
+    </script>    
 </head>
 
 <body>
@@ -74,34 +79,32 @@
         </figcaption>
     </figure>
 
-    <div class='separator'></div>
-    
-    <div id="contact" class="overlay">
-        <div class="popup">
-            <a class="close" href="#footer">&times;</a>
-            <h2>Contact Me!</h2>
-            <div class="container">  
-                <form id="gform" action="https://script.google.com/macros/s/AKfycby-_PpFKDD_Gurnl_1hBFyM7HdWOeerOywKyCgL9xFHkyn76Q6Y/exec" method="post">
-                  <h4>I'd love to hear from you!</h4>
-                  <fieldset>
-                    <input placeholder="Your name" name ="name" type="text" tabindex="1" required autofocus>
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Email Address" name ="email" type="email" tabindex="2" required>
-                  </fieldset>
-                    <textarea placeholder="Type your message here...." name ="message" tabindex="3" required></textarea>
-                  </fieldset>
-                  <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                  </fieldset>
-                  </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
 </section>
 
+<section>
+<div id="contact" class="overlay">
+<div class="popup">
+    <a class="close" href="#footer">&times;</a>
+    <h2>Contact Me!</h2>
+    <div class="container">  
+        <form id="gform" action="https://script.google.com/macros/s/AKfycby-_PpFKDD_Gurnl_1hBFyM7HdWOeerOywKyCgL9xFHkyn76Q6Y/exec" method="post">
+            <h4>I'd love to hear from you!</h4>
+            <fieldset>
+            <input placeholder="Your name" name ="name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Your Email Address" name ="email" type="email" tabindex="2" required>
+            </fieldset>
+            <textarea placeholder="Type your message here...." name ="message" tabindex="3" required></textarea>
+            </fieldset>
+            <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            </div>
+        </form>
+    </div>
+</div>
+</section>
 
 <footer id="footer">
 	<div class="container">

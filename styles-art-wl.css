@@ -332,6 +332,7 @@ nav a:hover, nav a:focus {
 	background: rgba(0, 0, 0, 0.9);
 	visibility: hidden;
 	opacity: 0;
+	z-index: 100;
 }
 
 .overlay:target {
