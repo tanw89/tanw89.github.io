@@ -222,6 +222,7 @@ nav a:hover, nav a:focus{
 	padding: 17em 0em;
 	height: 100vh;
 	color: #FFF;
+	z-index: 2;
 }
 
 @media (min-width: 60rem) {
@@ -399,7 +400,7 @@ nav a:hover, nav a:focus{
 	background: rgba(0, 0, 0, 0.9);
 	visibility: hidden;
 	opacity: 0;
-	z-index: 100;
+	z-index: 1;
 }
 
 .overlay:target {
@@ -504,7 +505,9 @@ nav a:hover, nav a:focus{
 		transform: translateY(0%);
 		transition: all ease-in-out 250ms;
 	}
-}@media (max-height: 700px) {
+}
+
+@media (max-height: 700px) {
 	.port-item {
 		margin-top: 3.5em;
 		border-color: #232323;
@@ -567,6 +570,7 @@ footer {
 
 /* Contact Form
 =================== */
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact textarea,
