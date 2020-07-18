@@ -112,7 +112,7 @@
             <a class="close" href="#item3">&times;</a>
             <div class="content">
             The idea for “Richard” came about because many of my engaged or married friends were sourcing for a BTO flat. They wanted a quick, back-of-envelop way to verify that the valuations they were quoted were reasonable.
-            <br><br>Since HDB also publishes its data openly (clean data!), and I had experience in model fitting and evaluation, I thought: why not train a model based on this data and try to predict prices based on user's inputs of their flat's info? I then conceptualised the app's structure:
+            <br><br>Since HDB publishes clean data on resale transactions, I thought: why not train a model with this data and try to predict prices based on user's inputs of their flat's info? I then conceptualised the app's structure:
             <br><br> 
             <img src="img/code/richard/architecture.png">             
             <br><br>Based on this structure, the first step was to procure the data, then to train it, and finally evaluate the models. Out of 4 models I’ve tried, the XGBoost regressor provided the best accuracy. I stored the XGBoost weights in a pickle file:
@@ -143,8 +143,8 @@
             <h2>Exploring 3 popular neural networks in Keras</h2>
             <a class="close" href="#item4">&times;</a>
             <div class="content">
-           This IPYNB notebook was written for my final Applied Machine Learning assignment of the Specialist Diploma in Data Science (Artificial Intelligence). I took up this course at Singapore Polytechnic in 2018 as I wanted to sharpen the skills I have earlier gained from General Assembly. 
-            <br><br>The task was a classic one: fit a neural network to the MNIST dataset and train the computer to identify human-written digits correctly. However, to challenge myself, I did some things differently:  a) I trieed 3 neural networks instead of just 1, b) I built all 3 networks from scratch by reading through their papers and gaining a thorough understanding, rather than just importing ready-made versions, and c) I augmented the size of my train set instead of using the dataset as-is.
+           This IPYNB notebook was written for the final assignment of my Specialist Diploma in Data Science (Artificial Intelligence). I enrolled in this course at Singapore Polytechnic in 2018 as I wanted to sharpen the skills I have earlier gained from General Assembly. 
+            <br><br>The task was a classic one: fit a neural network to the MNIST dataset and train the computer to identify handwritten digits correctly. However, to challenge myself, I did some things differently:  a) I experimented with 3 neural networks and re-built all 3 from scratch by reading through their papers rather than just importing ready-made versions, and b) I augmented the size of my train set instead of using the dataset as-is.
             <br><br> The first architecture I built was the LeNet5 architecture. I read the original paper written by Yann LeCunn et al in 1998 and realised the network was certainly less complex due to the (lack of) compute power back then. I reproduced it and got an error rate of about 4.8%.
             <br><br>
             <img src="img/code/3NN/lenet5.png">    
@@ -153,7 +153,7 @@
 	        <br><br>
             <img src="img/code/3NN/zfnet.png"> 
             <br><br>
-            Finally, I learnt how to artificially increase the train set size by rotating the MNIST digits to form new images, and played around with the learning rate to get the best results. This allowed me to drop my error rate from nearly 5% earlier, to a whopping 0.97%. The link to the notebook is provided below.
+            Finally, I learnt how to artificially increase the train set size by rotating the MNIST digits to form new images and played around with the learning rate to get the best results. This allowed me to drop my error from nearly 5% to a whopping 0.97%. The link to the notebook is provided below.
             <br><br>
             <img src="img/code/3NN/augmentation.png"> 
             <br><br>
@@ -170,7 +170,7 @@
             <h2>Assessing the efficacy <br> of various clustering algorithms</h2>
             <a class="close" href="#item5">&times;</a>
             <div class="content">
-                In this IPYNB notebook, I assessed the effectiveness of various clustering algorithms when applied to the classic Iris dataset. 4 algorithms were tested: a) K-Means Clustering, b) Spectral Clustering, c) Agglomerative Clustering, and d) DBSCAN. Various evaluation metrics were used to assess each algorithm.
+                In this notebook, I assessed the effectiveness of various clustering algorithms applied to the classic Iris dataset. 4 algorithms were tested: a) K-Means Clustering, b) Spectral Clustering, c) Agglomerative Clustering, and d) DBSCAN. Various evaluation metrics were used to assess each algorithm.
                 <br><br>
                     <div class = "content-try">
                     <img src="img/code/cluster/calinski.png" width = 60%>  
@@ -180,7 +180,7 @@
                     <img src="img/code/cluster/silhoutte.png" width = 60%>
                     </div> 
                 <br><br>
-                Through this unsupervised learning task, I developed a personal workflow to triangulate and get a rough sense of where the optimal k value was. This was backed up by DBSCAN, which computes its own k without requiring the user’s specification. I then “subbed” this range of k values back into the 4 selected algorithms to see which one performed the best.  
+                Through this unsupervised learning task, I developed a personal workflow to triangulate and get a rough sense of where the optimal k value lies. This was backed up by DBSCAN, which computes its own k without requiring the user’s specification. I then “subbed” this range of k values back into the 4 selected algorithms to see which one performed the best.  
                 <br><br> 
                 <br>
                     <div class = "content-try">
