@@ -25,15 +25,21 @@
     <div class="container">
         <h1 class="title">Personal portfolio.</h1>
         <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
-        <a href="#item1" class="button button-accent">See my code</a> 
+        <a href="#code-about" class="button button-accent">My programming journey</a> 
     </div>
 </section>
     
-<section class="portfolio" id="portfolio">
+<section class="code-about" id="code-about">
     <h1>&lt;Hello World&gt;</h1>
-    <p class="title-small"> I first picked up programming in 2003. However it was not until 2017 that my affinity was rekindled through a Data Science course at General Assembly. By joining Kaggle data science competitions with my newly acquired skills, I learnt that these lines of machine-speak had potential for real world impact. 
+    <div class="code-title-small"> I first picked up programming in 2003 in my secondary school's programming club. However it was not until 2017 that my affinity was rekindled through a Data Science course at General Assembly. By joining Kaggle data science competitions with my newly acquired skills, I learnt that these lines of machine-speak had potential for real world impact. 
     <br><br> One of my biggest "eureka" moments was when my code achieved top 20% performance in a Costa Rican social service means testing contest -- hardly bleeding edge but very personally empowering to know that I had the tools to make a difference. 
-    <br><br> My next steps are to learn how to productionise models and create digital products. Currently, I am picking up full stack development skills.</p>
+    <br><br> My next steps are to learn how to productionise models and create digital products. I have just completed a second course in full stack development, and am looking to branch out into either data engineering (Azure, AWS, streaming analytics) or product management principles.
+    <br><br>
+    <p class="arrow"><a href="#item1" class="fa fa-arrow-down" id="arrow"></a></p>
+    </div>
+</section>
+        
+<section class="portfolio" id="portfolio">
         <!--portfolio item 1-->
     <figure class="port-item" id="item1">
         <img src="img/code/squirrel/squirrel2.png" alt="portfolio item">
@@ -69,7 +75,24 @@
             <a href="#popup4" class = "button button-port button-small">View here</a>
         </figcaption>
     </figure>
-            
+
+    <!--portfolio item 5-->
+    <figure class="port-item" id="item5">
+        <img src="img/code/makan/titletile.png" alt="portfolio item">
+        <figcaption class="port-desc">
+            <p>Recognising local food with a neural network</p>
+            <a href="#popup5" class = "button button-port button-small">View here</a>
+        </figcaption>
+    </figure>
+
+     <!--portfolio item 6-->
+     <figure class="port-item" id="item6">
+        <img src="img/code/mockup/titletile.png" alt="portfolio item">
+        <figcaption class="port-desc">
+            <p>Recognising local food with a neural network</p>
+            <a href="#popup5" class = "button button-port button-small">View here</a>
+        </figcaption>
+    </figure>
 </section>
 
 <!--Pop-ups-->
@@ -82,18 +105,26 @@
             The Investing Squirrel is a financial information chatbot served through a DialogFlow frontend, powered by a webhook in NodeJS. Originally, I built it to provide financial definitions for beginners. 
             <br><br>I later realised that incorporating API functionality would make it more powerful. I could perform quick checks on share prices, or pack in interactive content to function as behavioural nudges. 
             <br><br>
+            <div class="content-try">
             <img src="img/code/squirrel/options.png"> 
+            </div>
             <br><br>The chatbot functions as follows: based on the user’s inputs, DialogFlow will detect the appropriate intent. If an intent requesting for share price is detected, the backend webhook will make a POST request to the AlphaVantage API which provides financial information. 
             <br><br>
+            <div class="content-try">
             <img src="img/code/squirrel/shareprice.png">
+            </div>
             <br><br>
             Over time, I was able to improve the backend logic to include 2 more functions: 1) a news function:
             <br><br>
-            <img src="img/code/squirrel/news.png"> 
+            <div class="content-try">
+            <img src="img/code/squirrel/news.png">
+            </div> 
             <br><br>
             And 2) a technical indicator function, serving 3 simple indicators for my needs (MACD, RSI and stochastics).
             <br><br>
-            <img src="img/code/squirrel/technicals.png"> 
+            <div class="content-try">
+            <img src="img/code/squirrel/technicals.png">
+            </div> 
             <br><br>
             The Investing Squirrel is integrated with Facebook for beta testers. A raw version of it is available on Telegram (but due to limited API calls and choppy dynos from free Heroku hosting, you may experience some lag). Give it a shot and have fun!
             <br><br>
@@ -197,33 +228,49 @@
         </div>
     </div>
 
+    <div id="popup5" class="overlay">
+        <div class="popup">
+            <h2>Using VGG16 to<br> recognise local food</h2>
+            <a class="close" href="#item6">&times;</a>
+            <div class="content">
+                I used the VGG16 neural network architecture to classify a set of food pictures. This was a project in the fast.ai v1 run.
+                <br><br>
+                I first instantiated the network and then fit the data to it.                 
+                <br><br>
+                    <div class = "content-try">
+                    <img src="img/code/makan/instantiate-finetune.png" width = 85%>  
+                    </div>
+                <br><br>
+                I was thoroughly amazed at the simplicity of the implementation and efficacy despite the small train set. The results were actually pretty accurate!          
+                <br><br>
+                    <div class = "content-try">
+                    <img src="img/code/makan/validation.png" width = 85%>
+                    </div> 
+                <br><br>
+                The fast.ai syllabus really brought machine learning down from the realms of the "technical Levites" to something that could be learnt and applied by mere mortals. It was one of the key turning points of my journey in learning data science. You can check out the code below -- yes, it really is just a few lines of code in a notebook!                <br><br>
+                <div class="content-try">
+                <a href="https://www.slideshare.net/slideshow/embed_code/key/HCXEFDCRd0BKbY" target="_blank" class = "button button-port">See the code here</a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section>
     <div id="contact" class="overlay">
-    <div class="popup">
-        <a class="close" href="#footer">&times;</a>
-        <h2>Contact Me</h2>
-        <div class="formcontainer">  
-            <form id="gform" action="https://script.google.com/macros/s/AKfycby-_PpFKDD_Gurnl_1hBFyM7HdWOeerOywKyCgL9xFHkyn76Q6Y/exec" method="post">
-                <h4>I'd love to hear from you!</h4>
-                <fieldset>
-                <input placeholder="Your name" name ="name" type="text" tabindex="1" required>
-                </fieldset>
-                <fieldset>
-                <input placeholder="Your Email Address" name ="email" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                <textarea placeholder="Type your message here...." name ="message" tabindex="3" required></textarea>
-                </fieldset>
-                <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-            </form>
+        <div class="popup">
+            <a class="close" href="#footer">&times;</a>
+            <h2>Contact Me</h2>
+            <div class="iframe-container">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeYrVuBIFAUjdS3Mo1Norl8o22pK66hCE2JwS14Il3VOzdXdQ/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </div>
     </div>
-    </div>
-    </section>
+</section>
 
 <section class="other-segments">
         <h2>For now, that's all for code!</h2>
