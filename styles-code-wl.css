@@ -607,7 +607,7 @@ footer {
 			 width: 100%;
 		  }
 
-		  @media (max-height: 40rem) {
+		  @media (max-height: 35rem) {
 			.iframe-container {
 				position: relative;
 				padding-bottom: 100%; /* 16:9 */
@@ -625,4 +625,4 @@ footer {
 			  }
 
 }
-
+}
