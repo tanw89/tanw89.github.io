@@ -605,4 +605,22 @@ footer {
 			 top: 0;
 			 width: 100%;
 		  }
+
+		  @media (max-height: 60rem) {
+			.iframe-container {
+				position: relative;
+				padding-bottom: 100%; /* 16:9 */
+				padding-top: 56px;
+				height: 0;
+			}
+			  
+			  .iframe-container iframe {
+				 border: 0;
+				 height: 50%;
+				 left: 0;
+				 position: absolute;
+				 top: 0;
+				 width: 100%;
+			  }
+			}
 	}
