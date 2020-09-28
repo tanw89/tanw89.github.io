@@ -465,7 +465,7 @@ nav a:hover, nav a:focus {
 	}
 	.popup {
 		width: 90%;
-		height: 50%;
+		height: 80%;
 	}
 }
 
@@ -599,7 +599,7 @@ footer {
 		  
 		  .iframe-container iframe {
 			 border: 0;
-			 height: 50%;
+			 height: 100%;
 			 left: 0;
 			 position: absolute;
 			 top: 0;
