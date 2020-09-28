@@ -291,6 +291,7 @@ nav a:hover, nav a:focus {
 }
 
 .arrow {
+	padding-right: 3rem;
 	text-align:center;
 }
 #arrow {
