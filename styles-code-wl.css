@@ -473,13 +473,17 @@ nav a:hover, nav a:focus {
 	}
 }
 
+/*important!*/
 @media (max-width: 60rem) {
 	.box {
 		width: 80%;
 	}
 	.popup {
-		width: 90%;
-		height: 95%;
+		width: 95%;
+		height: 100%;
+		margin-top: 0vh;
+		margin-bottom: 0vh;
+		border-radius: 0px;
 	}
 }
 
