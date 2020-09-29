@@ -13,6 +13,11 @@ body {
 	text-align: center;
 }
 
+body:after{
+    display:none;
+    content: url(img/codebanner2-min.jpg);
+}
+
 img {
 	max-width: 100%;
 	height: auto;
