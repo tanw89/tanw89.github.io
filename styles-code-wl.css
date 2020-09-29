@@ -405,8 +405,8 @@ nav a:hover, nav a:focus {
 }
 
 .popup h2 {
-	margin-top: 1em;
-	margin-bottom: 1.5em;
+	margin-top: 0.7em;
+	margin-bottom: 1em;
 	color: #333;
 	font-family: Tahoma, Arial, sans-serif;
 }
