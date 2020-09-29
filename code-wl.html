@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<script>
+function noscroll() {
+    document.body.style.overflow = "hidden";
+}
+
+function canscroll() {
+    document.body.style.overflow = "scroll";
+}
+</script>
+
 <body>
 
     <header>
@@ -51,7 +61,7 @@
             <img src="img/code/squirrel/squirrel2.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>The Investing Squirrel - NodeJS-powered price checker</b></p>
-                <a href="#popup1" class="button button-port button-small">View here</a>
+                <a href="#popup1" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -60,7 +70,7 @@
             <img src="img/code/richard/richard2.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Richard, Flask-powered HDB Valuation Chatbot</b></p>
-                <a href="#popup2" class="button button-port button-small">View here</a>
+                <a href="#popup2" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -69,7 +79,7 @@
             <img src="img/code/3NN/3nn2.jpg" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Exploring 3 popular neural networks in Keras</b></p>
-                <a href="#popup3" class="button button-port button-small">View here</a>
+                <a href="#popup3" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -78,7 +88,7 @@
             <img src="img/code/cluster/cluster.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Assessing the efficacy of various clustering algorithms</p>
-                <a href="#popup4" class="button button-port button-small">View here</a>
+                <a href="#popup4" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -87,7 +97,7 @@
             <img src="img/code/makan/titletile.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Recognising local food with a neural network</p>
-                <a href="#popup5" class="button button-port button-small">View here</a>
+                <a href="#popup5" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -96,16 +106,16 @@
             <img src="img/code/mockup/titletile.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Mockup landing page for the Moments of Life app</p>
-                <a href="#popup6" class="button button-port button-small">View here</a>
+                <a href="#popup6" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
         <!--portfolio item 7-->
         <figure class="port-item" id="item7">
-            <img src="img/code/schemessg/titletile.png" alt="portfolio item">
+            <img src="img/code/schemessg/titletile.png" alt="portfolio item" onclick="noscroll()">
             <figcaption class="port-desc">
                 <p>SchemesSG</p>
-                <a href="#popup7" class="button button-port button-small">View here</a>
+                <a href="#popup7" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -114,7 +124,7 @@
             <img src="img/code/uxdiaries/titletile.png" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>The UX Diaries - <br>Reviewing UX<br> of public sector apps</p>
-                <a href="#popup8" class="button button-port button-small">View here</a>
+                <a href="#popup8" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
     </section>
@@ -124,7 +134,7 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>The Investing <br>Squirrel</h2>
-                <a class="close" href="#item2">&times;</a>
+                <a class="close" href="#item2" onclick="canscroll()">&times;</a>
                 <div class="content">
                     The Investing Squirrel is a financial information chatbot served through a DialogFlow frontend,
                     powered by a webhook in NodeJS. Originally, I built it to provide financial definitions for
@@ -173,7 +183,7 @@
         <div id="popup2" class="overlay">
             <div class="popup">
                 <h2>Richard, HDB <br> Valuation Chatbot</h2>
-                <a class="close" href="#item3">&times;</a>
+                <a class="close" href="#item3" onclick="canscroll()">&times;</a>
                 <div class="content">
                     "Richard" was the name of a neighbour I had when I was young. No prizes for correctly guessing his occupation.
                     <br><br>
@@ -226,7 +236,7 @@
         <div id="popup3" class="overlay">
             <div class="popup">
                 <h2>Exploring 3 popular <br>neural networks in Keras</h2>
-                <a class="close" href="#item4">&times;</a>
+                <a class="close" href="#item4" onclick="canscroll()">&times;</a>
                 <div class="content">
                     This IPYNB notebook was written for the final assignment of my Specialist Diploma in Data Science
                     (Artificial Intelligence). I enrolled in this course at Singapore Polytechnic in 2018 as I wanted to
@@ -274,7 +284,7 @@
         <div id="popup4" class="overlay">
             <div class="popup">
                 <h2>Assessing efficacy <br>of clustering algorithms</h2>
-                <a class="close" href="#item5">&times;</a>
+                <a class="close" href="#item5" onclick="canscroll()">&times;</a>
                 <div class="content">
                     In this notebook, I assessed the effectiveness of various clustering algorithms applied to the
                     classic Iris dataset. 4 algorithms were tested: a) K-Means Clustering, b) Spectral Clustering, c)
@@ -314,7 +324,7 @@
         <div id="popup5" class="overlay">
             <div class="popup">
                 <h2>Recognising local<br>food with VGG16</h2>
-                <a class="close" href="#item6">&times;</a>
+                <a class="close" href="#item6" onclick="canscroll()">&times;</a>
                 <div class="content">
                     I used the VGG16 neural network architecture to classify a set of food pictures. This was a project
                     in the fast.ai v1 run.
@@ -348,7 +358,7 @@
         <div id="popup6" class="overlay">
             <div class="popup">
                 <h2>Mock landing page <br> for MOL app</h2>
-                <a class="close" href="#item7">&times;</a>
+                <a class="close" href="#item7" onclick="canscroll()">&times;</a>
                 <div class="content">
                     Using Bootstrap 4 and JS, I made a mock landing page for my own imagining of the Moments of Life
                     App. The landing page aims to explain the idea of the app in a simple way to an imagined visitor.
@@ -371,7 +381,7 @@
         <div id="popup7" class="overlay">
             <div class="popup">
                 <h2>SchemesSG, a mobile <br>assistance directory</h2>
-                <a class="close" href="#item7">&times;</a>
+                <a class="close" href="#item8" onclick="canscroll()">&times;</a>
                 <div class="content">
                     SchemesSG is a mobile app built with React Native. It is a directory of various help schemes available in Singapore, inclusive of both government schemes as well as those by private bodies or NGOs. 
                     <br><br>
@@ -403,7 +413,7 @@
         <div id="popup8" class="overlay">
             <div class="popup">
                 <h2>The UX Diaries - A UX<br>review journal</h2>
-                <a class="close" href="#footer">&times;</a>
+                <a class="close" href="#footer" onclick="canscroll()">&times;</a>
                 <div class="content">
                     The UX Diaries is a journal where I record my experience and reflections of using government apps. It also details how I, as a user, would like to see these apps evolve. 
                     <br><br>
