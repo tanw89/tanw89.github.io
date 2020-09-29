@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <section class="home-hero-code">
+    <section class="home-hero-code" style="background-image: url(img/codebanner2-min.jpg)">
         <div class="container">
             <h1 class="title">Personal portfolio.</h1>
             <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
@@ -136,23 +136,23 @@
                     <div class="content-try">
                         <img src="img/code/squirrel/options.png">
                     </div>
-                    <br><br>The chatbot functions as follows: based on the user’s inputs, DialogFlow will detect the
+                    <br>The chatbot functions as follows: based on the user’s inputs, DialogFlow will detect the
                     appropriate intent. If an intent requesting for share price is detected, the backend webhook will
                     make a POST request to the AlphaVantage API which provides financial information.
                     <br><br>
                     <div class="content-try">
                         <img src="img/code/squirrel/shareprice.png">
                     </div>
-                    <br><br>
+                    <br>
                     Over time, I was able to improve the backend logic to include 2 more functions: 1) a news function:
                     <br><br>
                     <div class="content-try">
                         <img src="img/code/squirrel/news.png">
                     </div>
-                    <br><br>
+                    <br>
                     And 2) a technical indicator function, serving 3 simple indicators for my needs (MACD, RSI and
                     stochastics).
-                    <br><br>
+                    <br>
                     <div class="content-try">
                         <img src="img/code/squirrel/technicals.png">
                     </div>
@@ -161,12 +161,11 @@
                     available on Telegram (but due to limited API calls and choppy dynos from free Heroku hosting, you
                     may experience some lag). Give it a shot and have fun!
                     <br><br>
-                    <br><br>
                     <div class="content-try">
                         <a href="https://t.me/investingsquirrelbot" target="_blank" class="button button-port">Try it
                             here</a>
                     </div>
-                    <br><br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -188,7 +187,7 @@
                     <div class="content-try">
                         <img src="img/code/richard/architecture.png">
                     </div>
-                    <br><br>Based on this structure, the first step was to procure the data, then to train it, and
+                    <br>Based on this structure, the first step was to procure the data, then to train it, and
                     finally evaluate the models. Out of 4 models I’ve tried, the XGBoost regressor provided the best
                     accuracy. I stored the XGBoost weights in a pickle file:
                     <br><br>
@@ -197,7 +196,7 @@
                     The weights were connected by means of a Flask app to the user. The Flask script manages RESTful API
                     requests and user's inputs, essentially allowing what the user keys in to feed into the mathematical
                     calculations.
-                    <br><br>
+                    <br>
                     <div class="content-try">
                         <img src="img/code/richard/flaskapp.png"><br><br>
                     </div>
@@ -208,18 +207,17 @@
                     <div class="content-try">
                         <img src="img/code/richard/finaline.png">
                     </div>
-                    <br><br>
+                    <br>
                     Richard is available as a DialogFlow agent. Based on feedback from the initial test run (n=15
                     users), about 8 have said that the valuations were accurate. My future plans include converting the
                     frontend into a web form, and allowing users to give feedback on whether the valuation was accurate,
                     so that the model can reinforce its accuracy over time.
                     <br><br>
-                    <br><br>
                     <div class="content-try">
                         <a href="http://bot.dialogflow.com/hdbvaluationapp" target="_blank"
                             class="button button-port">Try it here</a>
                     </div>
-                    <br><br>
+                    <br>
                 </div>
             </div>
         </div>
