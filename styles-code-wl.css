@@ -394,8 +394,8 @@ nav a:hover, nav a:focus {
 }
 
 .popup {
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
