@@ -618,7 +618,7 @@ footer {
 
 @media (orientation: landscape) {
 	.iframe-container iframe {
-		padding-bottom: 15vh;
+		padding-bottom: 5vh;
 	}
 }
 
@@ -650,7 +650,7 @@ footer {
 	}
 	.iframe-container iframe {
 		border: 0;
-		height: 47%;
+		height: 50%;
 		left: 0;
 		position: absolute;
 		top: 0;
