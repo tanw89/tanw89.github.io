@@ -394,21 +394,21 @@ nav a:hover, nav a:focus {
 }
 
 .popup {
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
 	background: #fff;
 	border-radius: 5px;
 	width: 60%;
-	height: 80%;
+	height: 95%;
 	position: relative;
 	transition: all 1s ease-in-out;
 }
 
 .popup h2 {
-	margin-top: 0.7em;
+	margin-top: 1.3em;
 	margin-bottom: 1em;
 	color: #333;
 	font-family: Tahoma, Arial, sans-serif;
@@ -462,9 +462,6 @@ nav a:hover, nav a:focus {
 	.popup {
 		width: 70%;
 	}
-	.popup .content {
-		max-height: 75%;
-		padding-bottom: 1em;}
 }
 
 @media (max-width: 60rem) {
@@ -473,11 +470,14 @@ nav a:hover, nav a:focus {
 	}
 	.popup {
 		width: 90%;
-		height: 80%;
+		height: 95%;
 	}
+}
+
+@media (min-height: 1366px) { 
 	.popup .content {
-		max-height: 75%;
-		padding-bottom: 1em;}
+		max-height: 85%;
+}
 }
 
 @media (min-width: 37rem) {
@@ -487,7 +487,7 @@ nav a:hover, nav a:focus {
 	}
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 65rem) {
 	.port-item {
 		width: 33.333333334%;
 		overflow: hidden;
@@ -592,20 +592,22 @@ footer {
 	  
 	  .iframe-container iframe {
 		 border: 0;
-		 height: 70%;
+		 height: 80%;
 		 left: 0;
 		 position: absolute;
 		 top: 0;
 		 width: 100%;
+		 
 	  }
 	}
+	
 	
 	@media (max-width: 60rem) {
 		.iframe-container {
 			position: relative;
 			padding-bottom: 100%; /* 16:9 */
 			padding-top: 56px;
-			height: 0;
+			height: 75%;
 		}
 		  
 		  .iframe-container iframe {
@@ -617,7 +619,7 @@ footer {
 			 width: 100%;
 		  }
 
-		  @media (max-height: 30rem) {
+		  @media (max-height: 32rem) {
 			.iframe-container {
 				position: relative;
 				padding-bottom: 100%; /* 16:9 */
