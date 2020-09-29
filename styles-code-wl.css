@@ -226,7 +226,7 @@ nav a:hover, nav a:focus {
 
 /* home hero */
 
-.home-hero-code {
+.home-hero-page {
 	background-image: url(img/codebanner2-min.jpg);
 	background-size: cover;
 	background-position: center;
@@ -237,33 +237,33 @@ nav a:hover, nav a:focus {
 }
 
 @media (min-width: 60rem) {
-	.home-hero-code {
+	.home-hero-page {
 		height: 120vh;
 		padding-top: 35vh;
 	}
 }
 
 @media (max-height: 670px) {
-	.home-hero-code {
+	.home-hero-page {
 		height: 120vh;
 		padding-top: 12em;
 		padding-bottom: 0em;
 	}
 }
 
-/*============ code-about ===============*/
+/*============ page-about ===============*/
 
-/* code-about
+/* page-about
 =================== */
 
-.code-about {
+.page-about {
 	margin: 0em;
 	padding-bottom: 1em;
 	background-color: #000000;
 	color: #FFF;
 }
 
-.code-about h1 {
+.page-about h1 {
 	margin: 0em 0em;
 	padding-top: 0.6em;
 	padding-bottom: 0.2em;
@@ -276,7 +276,7 @@ nav a:hover, nav a:focus {
 	display: inline-block;
 }
 
-.code-about div {
+.page-about div {
 	border: 2px solid #FFF;
 	margin-top: -0.3em;
 	margin-bottom: 0em;
@@ -289,7 +289,7 @@ nav a:hover, nav a:focus {
 	color: #FFF;
 }
 
-.code-title-small {
+.page-title-small {
 	text-align: left;
 }
 

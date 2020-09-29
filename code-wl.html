@@ -11,24 +11,6 @@
 
 <script>
 
-// function toggleFullScreen() {
-//   var doc = window.document;
-//   var docEl = doc.documentElement;
-
-//   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-//   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-//   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-//     requestFullScreen.call(docEl);
-//   }
-//   else {
-//     cancelFullScreen.call(doc);
-//   }
-// }
-
-// toggleFullScreen();
-
-
 function noscroll() {
     document.body.style.overflow = "hidden";
 }
@@ -45,23 +27,23 @@ function canscroll() {
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#code-about">About</a></li>
+                <li><a href="#page-about">About</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="home-hero-code">
+    <section class="home-hero-page">
         <div class="container">
             <h1 class="title">Personal portfolio.</h1>
             <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
-            <a href="#code-about" class="button button-accent">My programming journey</a>
+            <a href="#page-about" class="button button-accent">My programming journey</a>
         </div>
     </section>
 
-    <section class="code-about" id="code-about">
+    <section class="page-about" id="page-about">
         <h1>&lt;Hello World&gt;</h1>
-        <div class="code-title-small"> Although I first picked up programming in 2003, it was
+        <div class="page-title-small"> Although I first picked up programming in 2003, it was
             only in 2017 that my affinity was rekindled through a Data Science course at General Assembly. By joining
             Kaggle data science competitions with my newly acquired skills, I learnt that these lines of machine-speak
             had potential for real impact.
