@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weilie</title>
-    <link href="styles-music-wl.css" rel="stylesheet" type="text/css">
+    <link href="styles-page-wl.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
+
+
 <body>
 
-<header>
-    <img src="img/logo-green-nobg.png" alt="WL Jumbotron" class="logo" height="75" width="180">
-    <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#portfolio">About</a></li>
-        <li><a href="#footer">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <img src="img/logo-green-nobg.png" alt="WL Jumbotron" class="logo" height="75" width="180">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#page-about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="home-hero-code">
-    <div class="container">
-        <h1 class="title">Personal portfolio.</h1>
-        <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
-        <a href="#item1" class="button button-accent">Listen to my music</a> 
-    </div>
-</section>
-    
-<section class="portfolio" id="portfolio">
-    <h1>Where words fail...</h1>
-    <p class="music-about-textbox">Music speaks. It has been speaking to me since childhood, and through it, I hope to speak to others too. Being clasically trained, I am interested in repertoire from the Baroque to the 20th century. I have a particular liking for sacred music by Bach and Handel, and clean tonal sonatas by Scarlatti. I also quite like Nirvana and Deep Purple -- such a strange mix.  
-            <br><br>I have recently tried to record more jazz renderings of standards or oldies, and am looking to learn as well as apply jazz harmony and theory.
-    </p>
+    <section class="home-hero-page" style="background-image: url(img/musicbanner.jpg)">
+        <div class="container">
+            <h1 class="title">Personal portfolio.</h1>
+            <p class="title-small"> Creating a more interesting world through music, art and computation.</p>
+            <a href="#page-about" class="button button-accent">Musical adventures</a>
+        </div>
+    </section>
+
+    <section class="page-about" id="page-about">
+        <h1>Where words fail...</h1>
+        <div class="page-title-small"> Music speaks. <br><br> Similarly, through music I hope to speak to others too.
+            Being clasically trained, I am interested in repertoire from the Baroque to the 20th century. I have a
+            particular liking for sacred music by Bach and Handel, and clean tonal sonatas by Scarlatti. I also quite
+            like Nirvana and Deep Purple. Such a strange mix.
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
         <!--portfolio item 1-->
-    <figure class="port-item" id="item1">
-        <img src="img/music/GOT/gotcover.jpg" alt="portfolio item">
-        <figcaption class="port-desc">
-            <p>Game of Thrones theme</b></p>
-            <a href="#popup1" class = "button button-port button-small">View here</a>
-        </figcaption>
-    </figure>
+        <figure class="port-item" id="item1">
+            <img src="img/music/GOT/gotcover.jpg" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p>Game of Thrones theme</b></p>
+                <a href="#popup1" class="button button-port button-small" onclick="noscroll()">View here</a>
+            </figcaption>
+        </figure>
 
         <!--portfolio item 2-->
         <figure class="port-item" id="item2">
             <img src="img/music/poulenc/poulenccover.jpg" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Francis Poulenc - Trois Novelettes pour Piano, No.1</b></p>
-                <a href="#popup2" class = "button button-port button-small">View here</a>
+                <a href="#popup2" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
 
@@ -58,153 +66,181 @@
             <img src="img/music/christmas/christmascover.jpg" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Jazzy Chestnuts</b></p>
-                <a href="#popup3" class = "button button-port button-small">View here</a>
+                <a href="#popup3" class="button button-port button-small" onclick="noscroll()">View here</a>
             </figcaption>
         </figure>
-
-
-</section>
-
-<!--Pop-ups-->
-<section class="portfolio">
-
-    <div id="popup1" class="overlay">
-        <div class="popup">
-            <h2>GoT theme</h2>
-            <a class="close" id="close-button-id1" href="#item2">&times;</a>
-            <iframe width="80%" height="40%" id="youtube-player-id1" src="https://www.youtube.com/embed/9b52TgxKnaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="content">
-                After a rather shocking Season 8, there was no other way to get my Game of Thrones fix. I decided to alleviate some of that withdrawal by coming up with my own arrangement of the opening theme. This was done on an old Casio CLK model keyboard bought in 1999 - the MIDI might sound dated, but the wide range of instruments gives it versatility that remains relevant till today. 
-            </div>
-        </div>
-    </div>
-
-    <div id="popup2" class="overlay">
-        <div class="popup">
-            <h2> Novelette in C </h2>
-            <a class="close" id="close-button-id2" href="#item3">&times;</a>
-            <iframe width="80%" height="40%" id="youtube-player-id2" src="https://www.youtube.com/embed/MQXKHtSM4Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="content">
-                I played Francis Poulenc's novelette in my ATCL programme in December 2010 (how time flies)! I still play this set of 3 pieces fondly because they bring back warm memories of my years as a young adult. 
-                <br><br>The video here shows the first novelette in C major, which sports a rather light and dreamy texture. The melody takes a slightly darker turn, but it uses this to explore new keys, and then resumes its bright cheeriness -- a trajectory of resilience, the way I see it.  
-            </div>
-        </div>
-    </div>
-
-    <div id="popup3" class="overlay">
-        <div class="popup">
-            <h2>Jazzy Chestnuts</h2>
-            <a class="close" id="close-button-id3" href="#footer">&times;</a>
-            <iframe width="80%" height="40%" id="youtube-player-id3" src="https://www.youtube.com/embed/KVjOuMfQwM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="content">
-            Yup, roasting on an open fire. Recorded this during the Christmas season in 2017. I love jazzy chords and would like to make edgier ones.
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section>
-    <div id="contact" class="overlay">
-    <div class="popup">
-        <a class="close" href="#footer">&times;</a>
-        <h2>Contact Me</h2>
-        <div class="formcontainer">  
-            <form id="gform" action="https://script.google.com/macros/s/AKfycby-_PpFKDD_Gurnl_1hBFyM7HdWOeerOywKyCgL9xFHkyn76Q6Y/exec" method="post">
-                <h4>I'd love to hear from you!</h4>
-                <fieldset>
-                <input placeholder="Your name" name ="name" type="text" tabindex="1" required>
-                </fieldset>
-                <fieldset>
-                <input placeholder="Your Email Address" name ="email" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                <textarea placeholder="Type your message here...." name ="message" tabindex="3" required></textarea>
-                </fieldset>
-                <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-    </div>
-    </div>
     </section>
 
-<section class="other-segments">
-        <h2>For now, that's all for music!</h2>
-        <a href="code-wl.html" class="button-others">See my code</a> 
-        <a href="art-wl.html" class="button-others">See my art</a> 
-</section>
-
-<footer id="footer">
-	<div class="container">
-		<div class="col-3">
-            <strong>Thank you for checking out my page!</strong> Ping me via these channels if you want to reach out for coffee.</p>
-		</div>
-
-		<div class="col-1">
-			<ul class="unstyled-list">
-                <a href="https://www.facebook.com/weilie.tan.7" class="fa fa-3x fa-facebook"></a>
-                <br>
-			</ul>
-		</div>
-
-		<div class="col-1">
-			<ul class="unstyled-list">
-                <a href="https://www.linkedin.com/in/tanweilie/" class="fa fa-3x fa-linkedin"></a>
-			</ul>
-		</div>
-
-		<div class="col-1">
-			<ul class="unstyled-list">
-                <a href="https://github.com/tanw89" class="fa fa-3x fa-github"></a>
-			</ul>
+    <!--Pop-ups-->
+    <section>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>GoT theme</h2>
+                <div class="content">
+                    <a class="close" id="close-button-id1" href="#item2">&times;</a>
+                    <div class="iframe-container-music">
+                    <iframe width="80%" height="40%" id="youtube-player-id1"
+                        src="https://www.youtube.com/embed/9b52TgxKnaI" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    After a rather shocking Season 8, there was no other way to get my Game of Thrones fix. I
+                    decided to alleviate some of that withdrawal by coming up with my own arrangement of the opening
+                    theme. This was done on an old Casio CLK model keyboard bought in 1999 - the MIDI might sound
+                    dated, but the wide range of instruments gives it versatility that remains relevant till today.
+                </div>
+            </div>
         </div>
-        
-        <div class="col-1">
-            <ul class="unstyled-list">
-                <a href="https://www.instagram.com/tanw1/" class="fa fa-3x fa-instagram"></a>
-            </ul>
         </div>
 
-        <div class="col-1">
-            <ul class="unstyled-list">
-                <a href="https://twitter.com/tanwtwit" class="fa fa-3x fa-twitter"></a>
-            </ul>
-        </div>
-        
-        <div class="col-1">
-            <ul class="unstyled-list">
-                <a href="#contact" class="fa fa-3x fa-envelope"></a>
-            </ul>
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <h2> Novelette in C </h2>
+                <div class="content">
+                    <a class="close" id="close-button-id2" href="#item3">&times;</a>
+                    <div class="iframe-container-music">
+                        <iframe width="80%" height="40%" id="youtube-player-id2"
+                            src="https://www.youtube.com/embed/MQXKHtSM4Cw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    I played Francis Poulenc's novelette in my ATCL programme in December 2010. How time flies! Today, I
+                    still recall this set of 3 pieces fondly because they bring back warm memories of my years as a
+                    young adult.
+                    <br><br>The video here shows the first novelette in C major, which sports a rather light and
+                    dreamy texture. The melody takes a slightly darker turn, but it uses this to explore new keys,
+                    and then resumes its bright cheeriness. A trajectory of resilience, the way I see it.
+                </div>
+            </div>
         </div>
 
-	</div>
-</footer>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <h2>Jazzy Chestnuts</h2>
+                <div class="content">
+                    <a class="close" id="close-button-id3" href="#footer">&times;</a>
+                    <div class="iframe-container-music">
+                        <iframe width="80%" height="40%" id="youtube-player-id3"
+                            src="https://www.youtube.com/embed/KVjOuMfQwM4" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    Yup, roasting on an open fire. Recorded this during the Christmas season in 2017. I love jazzy
+                    chords and would like to make edgier ones.
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section>
+        <div id="contact" class="overlay">
+            <div class="popup">
+                <a class="close" href="#footer">&times;</a>
+                <h2>Contact Me</h2>
+                <div class="iframe-container">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeYrVuBIFAUjdS3Mo1Norl8o22pK66hCE2JwS14Il3VOzdXdQ/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-segments">
+        <h2>For now, that's all for code!</h2>
+        <a href="music-wl.html" class="button-others">See my music</a>
+        <a href="art-wl.html" class="button-others">See my art</a>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="col-3">
+                <strong>Thank you for checking out my page!</strong> Ping me via these channels if you want to reach
+                out for coffee.
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="https://www.facebook.com/weilie.tan.7" class="fa fa-3x fa-facebook"></a>
+                    <br>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="https://www.linkedin.com/in/tanweilie/" class="fa fa-3x fa-linkedin"></a>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="https://github.com/tanw89" class="fa fa-3x fa-github"></a>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="https://www.instagram.com/tanw1/" class="fa fa-3x fa-instagram"></a>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="https://twitter.com/tanwtwit" class="fa fa-3x fa-twitter"></a>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <a href="#contact" class="fa fa-3x fa-envelope"></a>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 
 <script>
+
+    function noscroll() {
+        document.body.style.overflow = "hidden";
+    }
+
     var stopButton = document.getElementById('close-button-id1');
-        stopButton.onclick = function() {
-      var video = $("#youtube-player-id1",).attr("src");
-      $("#youtube-player-id1").attr("src","");
-      $("#youtube-player-id1").attr("src",video);
-    }; 
+    stopButton.onclick = function () {
+        var video = $("#youtube-player-id1",).attr("src");
+        $("#youtube-player-id1").attr("src", "");
+        $("#youtube-player-id1").attr("src", video);
+        $(document.body).removeAttr('style');
+        $(document.body).css("overflow", "scroll");
+    };
 
     var stopButton2 = document.getElementById('close-button-id2');
-        stopButton2.onclick = function() {
-      var video = $("#youtube-player-id2",).attr("src");
-      $("#youtube-player-id2").attr("src","");
-      $("#youtube-player-id2").attr("src",video);
-    }; 
+    stopButton2.onclick = function () {
+        var video = $("#youtube-player-id2",).attr("src");
+        $("#youtube-player-id2").attr("src", "");
+        $("#youtube-player-id2").attr("src", video);
+        $(document.body).removeAttr('style');
+        $(document.body).css("overflow", "scroll");
+    };
 
     var stopButton3 = document.getElementById('close-button-id3');
-        stopButton3.onclick = function() {
-      var video = $("#youtube-player-id3",).attr("src");
-      $("#youtube-player-id3").attr("src","");
-      $("#youtube-player-id3").attr("src",video);
+    stopButton3.onclick = function () {
+        var video = $("#youtube-player-id3",).attr("src");
+        $("#youtube-player-id3").attr("src", "");
+        $("#youtube-player-id3").attr("src", video);
+        $(document.body).removeAttr('style');
+        $(document.body).css("overflow", "scroll");
     }; 
 </script>
-    
 
 </html>

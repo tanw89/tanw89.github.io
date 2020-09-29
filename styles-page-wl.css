@@ -13,10 +13,11 @@ body {
 	text-align: center;
 }
 
-body:after{
-    display: none;
-    content: url(img/codebanner2-min.jpg);
-}
+body::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+	content:url(img/codebanner2-min.jpg) url(img/musicbanner.jpg) url(img/art2.jpg);
+  }
+  
 
 img {
 	max-width: 100%;
@@ -227,7 +228,6 @@ nav a:hover, nav a:focus {
 /* home hero */
 
 .home-hero-page {
-	background-image: url(img/codebanner2-min.jpg);
 	background-size: cover;
 	background-position: center;
 	padding: 17em 0em;
@@ -258,7 +258,8 @@ nav a:hover, nav a:focus {
 
 .page-about {
 	margin: 0em;
-	padding-bottom: 1em;
+	margin-bottom: -3.5em;
+	padding-bottom: 3.5em;
 	background-color: #000000;
 	color: #FFF;
 }
@@ -291,15 +292,6 @@ nav a:hover, nav a:focus {
 
 .page-title-small {
 	text-align: left;
-}
-
-.arrow {
-	padding-right: 3rem;
-	text-align: center;
-}
-
-#arrow {
-	color: #FFF;
 }
 
 /*============ portfolio ===============*/
@@ -337,6 +329,7 @@ nav a:hover, nav a:focus {
 	padding-left: 2em;
 	padding-right: 2em;
 	color: #FFF;
+	
 }
 
 .port-item {
@@ -479,6 +472,7 @@ nav a:hover, nav a:focus {
 }
 
 /*important!*/
+
 @media (max-width: 60rem) {
 	.box {
 		width: 80%;
@@ -595,6 +589,27 @@ footer {
 	color: #FFF;
 }
 
+/* Only for music
+=================== */
+
+@media screen {
+	.iframe-container-music {
+		text-align: center;
+	}
+	.iframe-container-music iframe {
+		left: 0;
+		position: relative;
+		top: 0;
+		width: 100%
+	}
+}
+
+@media (min-width: 1200px) {
+	.iframe-container-music iframe {
+		height: 400px
+	}
+}
+
 /* Contact Form
 =================== */
 
@@ -620,7 +635,9 @@ footer {
 	.iframe-container iframe {
 		padding-bottom: 5vh;
 	}
-}/*important*/
+}
+
+/*important*/
 
 @media (max-width: 60rem) {
 	.iframe-container {

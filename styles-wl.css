@@ -581,37 +581,63 @@ footer {
 =================== */
 
 @media screen {
-.iframe-container {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 56px;
-	height: 0;
+	.iframe-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		/* 16:9 */
+		padding-top: 56px;
+		height: 100%
+	}
+	.iframe-container iframe {
+		border: 0;
+		height: 80%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
-  
-  .iframe-container iframe {
-	 border: 0;
-	 height: 70%;
-	 left: 0;
-	 position: absolute;
-	 top: 0;
-	 width: 100%;
-  }
+
+@media (orientation: landscape) {
+	.iframe-container iframe {
+		padding-bottom: 5vh;
+	}
 }
+
+/*important*/
 
 @media (max-width: 60rem) {
 	.iframe-container {
 		position: relative;
-		padding-bottom: 100%; /* 16:9 */
+		padding-bottom: 100%;
+		/* 16:9 */
+		padding-top: 56px;
+		height: 75%;
+	}
+	.iframe-container iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+@media (max-height: 32rem) {
+	.iframe-container {
+		position: relative;
+		padding-bottom: 100%;
+		/* 16:9 */
 		padding-top: 56px;
 		height: 0;
 	}
-	  
-	  .iframe-container iframe {
-		 border: 0;
-		 height: 100%;
-		 left: 0;
-		 position: absolute;
-		 top: 0;
-		 width: 100%;
-	  }
+	.iframe-container iframe {
+		border: 0;
+		height: 72%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
