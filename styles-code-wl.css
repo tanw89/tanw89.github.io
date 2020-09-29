@@ -444,11 +444,16 @@ nav a:hover, nav a:focus {
 }
 
 @media (orientation: landscape) {
-		.popup{
-		padding-bottom: 10%;
+	.popup {
+		padding-bottom: 6%;
 	}
-  }
-
+	.popup h2 {
+		margin-top: 0.4em;
+		margin-bottom: 1em;
+		color: #333;
+		font-family: Tahoma, Arial, sans-serif;
+	}
+}
 
 @media screen and (max-width: 700px) {
 	.box {
@@ -603,11 +608,10 @@ footer {
 }
 
 @media (orientation: landscape) {
-
 	.iframe-container iframe {
-	padding-bottom: 15%;
-  }
-  }
+		padding-bottom: 15%;
+	}
+}
 
 @media (max-width: 60rem) {
 	.iframe-container {
