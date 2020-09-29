@@ -14,7 +14,7 @@ body {
 }
 
 body:after{
-    display:none;
+    display: none;
     content: url(img/codebanner2-min.jpg);
 }
 
@@ -387,7 +387,7 @@ nav a:hover, nav a:focus {
 	background: rgba(0, 0, 0, 0.9);
 	visibility: hidden;
 	opacity: 0;
-	z-index: 0;
+	z-index: 1;
 }
 
 .overlay:target {
