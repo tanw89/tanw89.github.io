@@ -620,7 +620,7 @@ footer {
 	.iframe-container iframe {
 		padding-bottom: 5vh;
 	}
-}
+}/*important*/
 
 @media (max-width: 60rem) {
 	.iframe-container {
@@ -650,7 +650,7 @@ footer {
 	}
 	.iframe-container iframe {
 		border: 0;
-		height: 50%;
+		height: 72%;
 		left: 0;
 		position: absolute;
 		top: 0;
