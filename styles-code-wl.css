@@ -394,8 +394,8 @@ nav a:hover, nav a:focus {
 }
 
 .popup {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
@@ -430,7 +430,7 @@ nav a:hover, nav a:focus {
 }
 
 .popup .content {
-	max-height: 85%;
+	max-height: 75%;
 	padding-bottom: 1em;
 	margin-left: 1.5em;
 	margin-right: 0.3em;
@@ -462,6 +462,9 @@ nav a:hover, nav a:focus {
 	.popup {
 		width: 70%;
 	}
+	.popup .content {
+		max-height: 75%;
+		padding-bottom: 1em;}
 }
 
 @media (max-width: 60rem) {
@@ -470,8 +473,11 @@ nav a:hover, nav a:focus {
 	}
 	.popup {
 		width: 90%;
-		height: 90%;
+		height: 80%;
 	}
+	.popup .content {
+		max-height: 75%;
+		padding-bottom: 1em;}
 }
 
 @media (min-width: 37rem) {
