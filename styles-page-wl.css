@@ -15,7 +15,7 @@ body {
 
 body::after{
 	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-	content:url(https://chidnast.sirv.com/Images/codebanner2-min.jpg) url(https://chidnast.sirv.com/Images/music/banner.jpg) url(https://chidnast.sirv.com/Images/art/2.jpg);
+	content:url(https://chidnast.sirv.com/Images/codebanner2-min.jpg) url(img/musicbanner.jpg) url(https://chidnast.sirv.com/Images/art/2.jpg);
   }
   
 
@@ -586,7 +586,7 @@ footer {
 
 .fa-envelope {
 	background: #232323;
-	color: #FFF;
+	color: #00FF00;
 }
 
 /* Only for music
