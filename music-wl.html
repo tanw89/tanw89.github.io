@@ -11,12 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
-
+<script>
+    window.location.replace("#");
+    // slice off the remaining '#' in HTML5:    
+    if (typeof window.history.replaceState == 'function') {
+        history.replaceState({}, '', window.location.href.slice(0, -1));
+    }
+</script>
 
 <body>
 
     <header>
-        <img src="https://chidnast.sirv.com/Images/logo-green-nobg.png" alt="WL Jumbotron" class="logo" height="75" width="180">
+        <img src="https://chidnast.sirv.com/Images/logo-green-nobg.png" alt="WL Jumbotron" class="logo" height="75"
+            width="180">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -80,10 +87,10 @@
                 <div class="content">
                     <a class="close" id="close-button-id1" href="#item2">&times;</a>
                     <div class="iframe-container-music">
-                    <iframe width="80%" height="40%" id="youtube-player-id1"
-                        src="https://www.youtube.com/embed/9b52TgxKnaI" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        <iframe width="80%" height="40%" id="youtube-player-id1"
+                            src="https://www.youtube.com/embed/9b52TgxKnaI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <br>
                     After a rather shocking Season 8, there was no other way to get my Game of Thrones fix. I
@@ -159,6 +166,7 @@
         <h2>That's all for music (for now)!</h2>
         <a href="code-wl.html" class="button-others">Back to - code</a>
         <a href="art-wl.html" class="button-others">Next - art</a>
+        <a class="button-others" onclick="exit()">Exit my site</a>
     </section>
 
     <footer id="footer">
@@ -211,9 +219,15 @@
 </body>
 
 <script>
-
     function noscroll() {
         document.body.style.overflow = "hidden";
+        
+    }
+
+    function exit(){
+        var Backlen = history.length;
+        alert(Backlen);
+        window.history.go(-Backlen-1)
     }
 
     var stopButton = document.getElementById('close-button-id1');
@@ -241,7 +255,10 @@
         $("#youtube-player-id3").attr("src", video);
         $(document.body).removeAttr('style');
         $(document.body).css("overflow", "scroll");
-    }; 
+    };
+
+
 </script>
+
 
 </html>
