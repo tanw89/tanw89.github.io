@@ -166,7 +166,6 @@
         <h2>That's all for music (for now)!</h2>
         <a href="code-wl.html" class="button-others">Back to - code</a>
         <a href="art-wl.html" class="button-others">Next - art</a>
-        <a class="button-others" onclick="exit()">Exit my site</a>
     </section>
 
     <footer id="footer">
@@ -222,12 +221,6 @@
     function noscroll() {
         document.body.style.overflow = "hidden";
         
-    }
-
-    function exit(){
-        var Backlen = history.length;
-        alert(Backlen);
-        window.history.go(-Backlen-1)
     }
 
     var stopButton = document.getElementById('close-button-id1');
